@@ -1,59 +1,414 @@
-<!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IEEE Computer Society UPS Quito</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#presentacion" class="tab-link active">Presentación</a></li>
-            <li><a href="#directiva" class="tab-link">Directiva</a></li>
-            <li><a href="https://events.vtools.ieee.org/events/search/advanced?sub=true&store_values=true&search=&category_id=&subcategory_id=&meeting%5Bregion_spoid%5D=R9&meeting%5Bsection_spoid%5D=R90729&meeting%5Bou_spoid%5D=SBC00751E&society=&meeting_after=&meeting_before=&geo_distance=&geo_search=&order=start_time&per_page=30#13" target="_blank" class="tab-link">vTools</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="presentacion" class="tab-content active">
-            <h1>IEEE Computer Society<br>Universidad Politécnica Salesiana - Sede Quito</h1>
-            <h2>Misión</h2>
-            <p>La misión de la IEEE Computer Society es ser la principal fuente de información, inspiración y colaboración en computación, promoviendo el avance de la teoría, la práctica y la aplicación de las tecnologías de la información y la computación para el beneficio de la humanidad.</p>
-            <h2>Visión</h2>
-            <p>La visión de la IEEE Computer Society es liderar el desarrollo y la diseminación de conocimientos en computación, fomentando la innovación, la educación y el crecimiento profesional de sus miembros a nivel global.</p>
-        </section>
-        <section id="directiva" class="tab-content">
-            <h1>Directiva 2025</h1>
-            <div class="directiva-list">
-                <div class="directivo-card">
-                    <div class="directivo-foto foto-placeholder"></div>
-                    <h3>Presidente/a</h3>
-                    <p>Nombre del Presidente/a</p>
-                </div>
-                <div class="directivo-card">
-                    <div class="directivo-foto foto-placeholder"></div>
-                    <h3>Vicepresidente/a</h3>
-                    <p>Nombre del Vicepresidente/a</p>
-                </div>
-                <div class="directivo-card">
-                    <div class="directivo-foto foto-placeholder"></div>
-                    <h3>Secretario/a</h3>
-                    <p>Nombre del Secretario/a</p>
-                </div>
-                <div class="directivo-card">
-                    <div class="directivo-foto foto-placeholder"></div>
-                    <h3>Tesorero/a</h3>
-                    <p>Nombre del Tesorero/a</p>
-                </div>
-                <div class="directivo-card">
-                    <div class="directivo-foto foto-placeholder"></div>
-                    <h3>Representante de Membresía</h3>
-                    <p>Nombre del Representante</p>
-                </div>
-            </div>
-            <p class="directiva-note">* Reemplaza los nombres y fotos según corresponda.</p>
-        </section>
-    </main>
-    <script src="script.js"></script>
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   IEEE CS UPS Quito
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-white text-[#75787B] leading-[1.2] min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-primary text-white text-[12px] font-semibold py-3 px-6 flex items-center max-w-[1200px] mx-auto rounded-b-md shadow-md">
+   <i class="fas fa-book mr-3 text-lg"></i>
+   IEEE CS UPS
+  </header>
+  <!-- Main content -->
+  <main class="flex-grow max-w-[1200px] mx-auto p-6 grid grid-cols-1 md:grid-cols-6 gap-x-6 gap-y-10">
+   <!-- Column 1 -->
+   <section class="text-center md:text-left md:col-span-1 flex flex-col items-center md:items-start">
+    <h3 class="font-semibold text-[14px] mb-4 max-w-[280px] text-primary">
+     Bienvenidos a IEEE Computer Society UPS Quito
+    </h3>
+    <p class="mb-4 text-[11px] leading-[1.4] max-w-[280px]">
+     La IEEE Computer Society en la Universidad Politécnica Salesiana sede Quito es un capítulo técnico dedicado a fomentar el conocimiento y desarrollo en el ámbito de la computación e informática.
+    </p>
+    <p class="mb-4 text-[11px] leading-[1.4] max-w-[280px]">
+     Nuestra misión es crear un espacio donde estudiantes apasionados por la tecnología puedan crecer profesionalmente, compartir conocimientos y desarrollar proyectos innovadores que impacten positivamente en la comunidad universitaria y la sociedad.
+    </p>
+    <p class="mb-6 text-[11px] leading-[1.4] max-w-[280px]">
+     Formamos parte de la organización profesional más grande del mundo dedicada al avance de la tecnología, conectando a nuestros miembros con recursos globales y oportunidades únicas de networking.
+    </p>
+    <button class="bg-primary text-white text-[11px] font-semibold py-2 px-8 rounded mb-3 w-full max-w-[280px] hover:bg-secondary transition">
+     Nuestros Objetivos
+    </button>
+    <button class="border border-primary text-primary text-[11px] font-semibold py-2 px-8 rounded mb-3 w-full max-w-[280px] hover:bg-muted transition">
+     Ventajas de Pertenecer
+    </button>
+    <button class="border border-primary text-primary text-[11px] font-semibold py-2 px-8 rounded w-full max-w-[280px] hover:bg-muted transition">
+     Únete como Voluntario
+    </button>
+    <div class="mt-6 text-[9px] text-left max-w-[280px]">
+     <p class="font-semibold mb-2 text-primary">
+      ¿Por qué somos importantes?
+     </p>
+     <p class="mb-2">
+      En IEEE mundo cada vez más digitalizado, la IEEE Computer Society UPS Quito reparte a los estudiantes con habilidades técnicas y profesionales esenciales para destacar en la industria tecnológica.
+     </p>
+     <p>
+      Facilitamos el acceso a recursos educativos de vanguardia, eventos internacionales y oportunidades de networking que complementan la formación académica tradicional.
+     </p>
+    </div>
+   </section>
+   <!-- Column 2 -->
+   <section class="text-[11px] md:col-span-2">
+    <h4 class="font-semibold mb-4 text-[14px] text-primary">
+     Objetivos del Capítulo
+    </h4>
+    <p class="mb-6 leading-[1.4] max-w-[400px] text-muted">
+     Conoce los propósitos fundamentales que guían nuestra actividad y contribuciones a la comunidad académica.
+    </p>
+    <div class="space-y-6 max-w-[400px]">
+     <!-- Card 1 -->
+     <div class="flex gap-4">
+      <div class="bg-primary text-white p-3 rounded w-10 h-10 flex items-center justify-center shrink-0">
+       <i class="fas fa-cogs text-lg"></i>
+      </div>
+      <div>
+       <p class="font-semibold mb-1 text-primary">
+        Aprendizaje Transformador
+       </p>
+       <p class="text-[10px] leading-[1.3] text-muted">
+        Promover el desarrollo académico de los estudiantes mediante talleres, conferencias y actividades que complementen su formación universitaria en ciencias de la computación.
+       </p>
+      </div>
+     </div>
+     <!-- Card 2 -->
+     <div class="flex gap-4">
+      <div class="bg-primary text-white p-3 rounded w-10 h-10 flex items-center justify-center shrink-0">
+       <i class="fas fa-users text-lg"></i>
+      </div>
+      <div>
+       <p class="font-semibold mb-1 text-primary">
+        Comunidad Colaborativa
+       </p>
+       <p class="text-[10px] leading-[1.3] text-muted">
+        Crear un espacio de colaboración entre estudiantes, docentes y profesionales del sector tecnológico para compartir conocimientos y experiencias en proyectos innovadores.
+       </p>
+      </div>
+     </div>
+     <!-- Card 3 -->
+     <div class="flex gap-4">
+      <div class="bg-primary text-white p-3 rounded w-10 h-10 flex items-center justify-center shrink-0">
+       <i class="fas fa-lightbulb text-lg"></i>
+      </div>
+      <div>
+       <p class="font-semibold mb-1 text-primary">
+        Innovación Tecnológica
+       </p>
+       <p class="text-[10px] leading-[1.3] text-muted">
+        Fomentar la investigación y desarrollo de soluciones tecnológicas que respondan a problemas reales de la sociedad, aplicando los conocimientos adquiridos en la universidad.
+       </p>
+      </div>
+     </div>
+     <!-- Card 4 -->
+     <div class="flex gap-4">
+      <div class="bg-primary text-white p-3 rounded w-10 h-10 flex items-center justify-center shrink-0">
+       <i class="fas fa-globe text-lg"></i>
+      </div>
+      <div>
+       <p class="font-semibold mb-1 text-primary">
+        Proyección Internacional
+       </p>
+       <p class="text-[10px] leading-[1.3] text-muted">
+        Conectar a los estudiantes con la red global de IEEE Computer Society, facilitando intercambios académicos, participación en congresos internacionales y acceso a publicaciones científicas de alto impacto.
+       </p>
+      </div>
+     </div>
+     <!-- Card 5 -->
+     <div class="flex gap-4">
+      <div class="bg-primary text-white p-3 rounded w-10 h-10 flex items-center justify-center shrink-0">
+       <i class="fas fa-handshake text-lg"></i>
+      </div>
+      <div>
+       <p class="font-semibold mb-1 text-primary">
+        Vinculación Profesional
+       </p>
+       <p class="text-[10px] leading-[1.3] text-muted">
+        Establecer puentes entre el mundo académico y el sector empresarial, facilitando oportunidades de prácticas, pasantías y empleo para los miembros del capítulo.
+       </p>
+      </div>
+     </div>
+    </div>
+    <p class="mt-6 mb-2 font-semibold text-[10px] text-primary">
+     ¿Por qué son importantes nuestros objetivos?
+    </p>
+    <p class="text-[9px] leading-[1.3] mb-6 text-muted">
+     Estos objetivos están alineados con la misión global de IEEE Computer Society de ser la principal organización de profesionales en computación, inspirando diálogo, compartiendo recursos y liderando el campo tecnológico.
+    </p>
+    <div class="border border-primary bg-secondary text-white text-[9px] p-4 rounded max-w-[400px]">
+     "Nuestro capítulo busca formar profesionales íntegros, con sólidos conocimientos técnicos y compromiso social, capaces de liderar la transformación digital en Ecuador y el mundo."
+     <br/>
+     <span class="font-semibold">
+      - Directiva IEEE CS UPS Quito
+     </span>
+    </div>
+   </section>
+   <!-- Column 3 -->
+   <section class="text-[11px] md:col-span-3">
+    <h4 class="font-semibold mb-4 text-[14px] text-primary">
+     Ventajas de Pertenecer
+    </h4>
+    <p class="mb-6 leading-[1.4] max-w-[600px] text-muted">
+     Descubre los beneficios exclusivos que ofrece ser miembro de la IEEE Computer Society
+    </p>
+    <div class="space-y-6 max-w-[600px]">
+     <!-- Networking Global -->
+     <div class="bg-secondary p-5 rounded text-white text-[10px]">
+      <div class="flex items-center gap-3 mb-2 font-semibold">
+       <i class="fas fa-globe text-xl"></i>
+       Networking Global
+      </div>
+      <p class="mb-3">
+       Conecta con más de 60,000 profesionales y estudiantes de tecnología en todo el mundo. Participa en eventos exclusivos y establece contactos que impulsarán tu carrera.
+      </p>
+      <a class="font-semibold hover:underline cursor-pointer" href="#">
+       Conoce nuestras oportunidades de voluntariado
+      </a>
+     </div>
+     <!-- Recursos Educativos -->
+     <div class="bg-secondary p-5 rounded text-white text-[10px]">
+      <div class="flex items-center gap-3 mb-2 font-semibold">
+       <i class="fas fa-book-open text-xl"></i>
+       Recursos Educativos
+      </div>
+      <p class="mb-3">
+       Acceso ilimitado a la biblioteca digital IEEE Xplore con más de 5 millones de documentos técnicos, revistas especializadas y conferencias grabadas.
+      </p>
+      <div class="flex flex-wrap gap-2 text-[9px]">
+       <span class="border border-white rounded px-2 py-1">
+        Artículos técnicos
+       </span>
+       <span class="border border-white rounded px-2 py-1">
+        Videos exclusivos
+       </span>
+       <span class="border border-white rounded px-2 py-1">
+        Cursos certificados
+       </span>
+       <span class="border border-white rounded px-2 py-1">
+        Tutoriales prácticos
+       </span>
+      </div>
+     </div>
+     <!-- Desarrollo Profesional -->
+     <div class="bg-secondary p-5 rounded text-white text-[10px]">
+      <div class="flex items-center gap-3 mb-2 font-semibold">
+       <i class="fas fa-briefcase text-xl"></i>
+       Desarrollo Profesional
+      </div>
+      <p class="mb-3">
+       Impulsa tu carrera con herramientas exclusivas para miembros, incluyendo mentorías personalizadas, bolsa de trabajo especializada y descuentos en certificaciones.
+      </p>
+      <p class="mb-3 italic text-[9px]">
+       Programa de Mentoría
+       <br/>
+       Recibe atención personalizada de expertos en tu área de interés para acelerar tu crecimiento profesional.
+       <br/>
+       <span class="font-semibold">
+        Ing. María Sánchez
+       </span>
+       <br/>
+       Maestría en Inteligencia Artificial
+      </p>
+      <a class="font-semibold hover:underline cursor-pointer" href="#">
+       Conoce nuestros objetivos de desarrollo
+      </a>
+     </div>
+     <!-- Comunidad Local -->
+     <div class="bg-secondary p-5 rounded text-white text-[10px]">
+      <div class="flex items-center gap-3 mb-2 font-semibold">
+       <i class="fas fa-users text-xl"></i>
+       Comunidad Local
+      </div>
+      <p class="mb-3">
+       Forma parte de la comunidad IEEE Computer Society UPS Quito y participa en actividades exclusivas:
+      </p>
+      <ul class="list-disc list-inside text-[9px] mb-3">
+       <li>
+        Hackathons y competencias técnicas
+       </li>
+       <li>
+        Talleres prácticos de nuevas tecnologías
+       </li>
+       <li>
+        Eventos que conectan talentos y generan oportunidades
+       </li>
+       <li>
+        Proyectos colaborativos con impacto social
+       </li>
+      </ul>
+      <img alt="Foto de estudiantes participando en evento de IEEE CS UPS Quito, colaborando y aprendiendo" class="rounded w-full max-w-[400px] mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/ebca4a18-c41c-46cd-cb24-f3db9424ad39.jpg" width="400"/>
+     </div>
+     <!-- Reconocimiento Profesional -->
+     <div class="bg-secondary p-5 rounded text-white text-[10px]">
+      <div class="flex items-center gap-3 mb-2 font-semibold">
+       <i class="fas fa-award text-xl"></i>
+       Reconocimiento Profesional
+      </div>
+      <p class="mb-3">
+       Destaca en tu campo con el respaldo de la organización profesional de computación más grande del mundo:
+      </p>
+      <div class="flex flex-col gap-3 text-[9px]">
+       <div class="flex items-center gap-2">
+        <i class="fas fa-certificate"></i>
+        <p>
+         Certificaciones con respaldo a nivel mundial
+        </p>
+       </div>
+       <div class="flex items-center gap-2">
+        <i class="fas fa-trophy"></i>
+        <p>
+         Premios y distinciones
+        </p>
+       </div>
+      </div>
+      <p class="mt-4 text-[11px] font-semibold bg-primary p-3 rounded max-w-[400px] text-center mx-auto">
+       ¿Listo para unirte?
+       <br/>
+       Forma parte de la IEEE Computer Society UPS Quito y aprovecha todos estos beneficios exclusivos.
+      </p>
+      <button class="bg-primary text-white text-[11px] font-semibold py-3 px-10 rounded mt-3 w-full max-w-[400px] block mx-auto hover:bg-secondary transition">
+       Ser voluntario
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Column 4 -->
+   <section class="text-[11px] md:col-span-2">
+    <h4 class="font-semibold mb-4 text-[14px] text-primary">
+     Nuestras Redes Sociales
+    </h4>
+    <p class="mb-6 leading-[1.4] max-w-[320px] text-muted">
+     Conéctate con IEEE Computer Society UPS Quito y mantente informado de todas nuestras actividades
+    </p>
+    <img alt="Ilustración de personas conectadas en redes sociales, representando comunidad IEEE CS UPS Quito" class="mb-6 rounded max-w-[320px] mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/74d43e4d-44fe-4c17-cd72-5880425c2ae4.jpg" width="320"/>
+    <div class="flex flex-col gap-4 mb-6 max-w-[320px] mx-auto">
+     <button class="bg-primary text-white text-[11px] font-semibold py-3 px-6 rounded flex items-center gap-3 w-full hover:bg-secondary transition">
+      <i class="fab fa-instagram text-xl"></i>
+      Instagram
+      <span class="ml-auto bg-secondary px-3 py-1 rounded text-[9px]">
+       Seguir
+      </span>
+     </button>
+     <button class="bg-muted text-primary text-[11px] font-semibold py-3 px-6 rounded flex items-center gap-3 w-full hover:bg-[#9db0b8] transition">
+      <i class="fab fa-github text-xl"></i>
+      GitHub
+      <span class="ml-auto bg-primary px-3 py-1 rounded text-[9px] text-white">
+       Explorar
+      </span>
+     </button>
+    </div>
+    <p class="font-semibold mb-4 text-center underline cursor-pointer max-w-[320px] mx-auto text-primary">
+     ¿Quieres saber más?
+    </p>
+    <div class="flex justify-center gap-6 mb-6 max-w-[320px] mx-auto">
+     <button class="border border-primary text-primary text-[11px] font-semibold py-2 px-8 rounded w-[120px] hover:bg-muted transition">
+      Contacto
+     </button>
+     <button class="border border-primary text-primary text-[11px] font-semibold py-2 px-8 rounded w-[120px] hover:bg-muted transition">
+      Voluntariado
+     </button>
+    </div>
+    <p class="text-[10px] text-center mb-6 max-w-[320px] mx-auto text-muted">
+     Comparte nuestro contenido
+     <br/>
+     Ayúdanos a crecer compartiendo nuestro contenido en tus redes
+    </p>
+    <div class="flex justify-center gap-6 mb-6 text-[16px] text-secondary max-w-[320px] mx-auto">
+     <i class="fab fa-youtube cursor-pointer" title="YouTube"></i>
+     <i class="fab fa-twitter cursor-pointer" title="Twitter"></i>
+     <i class="fab fa-facebook cursor-pointer" title="Facebook"></i>
+     <i class="fab fa-tiktok cursor-pointer" title="TikTok"></i>
+    </div>
+    <div class="text-center text-[11px] mb-6 max-w-[320px] mx-auto text-primary">
+     <p class="font-semibold mb-3">
+      Redes Sociales
+     </p>
+     <div class="flex justify-center gap-6 text-primary text-[20px]">
+      <i class="fab fa-instagram cursor-pointer" title="Instagram"></i>
+      <i class="fab fa-linkedin-in cursor-pointer" title="LinkedIn"></i>
+     </div>
+    </div>
+    <a class="text-secondary text-[11px] underline mb-6 block text-center max-w-[320px] mx-auto" href="#">
+     Volver a la página de inicio
+    </a>
+   </section>
+   <!-- Column 5 -->
+   <section class="text-[10px] md:col-span-2">
+    <h4 class="font-semibold mb-4 text-[13px] text-primary">
+     Contacto
+    </h4>
+    <p class="mb-6 leading-[1.4] max-w-[320px] text-muted">
+     Estamos aquí para responder a tus preguntas y recibir tus comentarios.
+    </p>
+    <p class="font-semibold text-secondary mb-3 max-w-[320px]">
+     Información de Contacto
+    </p>
+    <div class="mb-6 space-y-3 max-w-[320px] text-primary">
+     <div class="flex items-center gap-3">
+      <i class="fas fa-envelope text-lg"></i>
+      <a class="hover:underline" href="mailto:ieee.cs@ups.edu.ec">
+       ieee.cs@ups.edu.ec
+      </a>
+     </div>
+     <div class="flex items-center gap-3">
+      <i class="fas fa-phone-alt text-lg"></i>
+      <a class="hover:underline" href="tel:+59322980680">
+       (593) 2 298 0680
+      </a>
+     </div>
+     <div class="flex items-center gap-3">
+      <i class="fas fa-map-marker-alt text-lg"></i>
+      <p>
+       Campus Sur UPS, Rumipamba y Morán Valverde, Quito
+      </p>
+     </div>
+    </div>
+    <p class="font-semibold text-secondary mb-3 max-w-[320px]">
+     Ubicación
+    </p>
+    <img alt="Mapa de ubicación de Campus Sur UPS, Rumipamba y Morán Valverde, Quito" class="rounded max-w-[320px] mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/a4abfe49-5b14-4ea5-d93e-76ba5945b424.jpg" width="320"/>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-bg-muted text-[9px] text-[#444] p-6 w-full mt-10">
+   <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between mb-4">
+    <div class="mb-4 md:mb-0">
+     <p class="font-semibold mb-2 text-primary">
+      Navegación
+     </p>
+     <ul class="space-y-1 text-[10px] text-muted">
+      <li>Inicio</li>
+      <li>Objetivos</li>
+      <li>Ventaja</li>
+      <li>Voluntariado</li>
+     </ul>
+    </div>
+    <div>
+     <p class="font-semibold mb-2 text-primary">
+      Contacto
+     </p>
+     <ul class="space-y-1 text-[10px] text-muted">
+      <li>Sobre Nosotros</li>
+      <li>Ubicación</li>
+      <li>Eventos</li>
+      <li>Preguntas</li>
+     </ul>
+    </div>
+   </div>
+   <div class="text-[8px] leading-[1.2] text-center text-muted">
+    Universidad Politécnica Salesiana
+    <br/>
+    Sede Quito - Stuttgart Branch
+    <br/>
+    © Copyright 2023 IEEE - All rights reserved. A public charity.
+    <br/>
+    IEEE is the worlds largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+   </div>
+  </footer>
+ </body>
 </html>
